@@ -3,7 +3,10 @@
   height: 100vh;
   border: 100px solid var(--point);
   background: var(--point);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   transition: border 0.5s ease-out;
   text-align: center;
 }
@@ -21,15 +24,6 @@
   margin: auto;
   transition: opacity 0.4s ease-out;
 }
-
-
-.content_wrap {
-  display: none;
-  
-  padding: 24px;
-}
-
-
 
 
 .nav {
@@ -300,6 +294,10 @@ main {
 
 @media all and (max-width:1570px) {
 
+  #introduction {
+    padding-top: 120px;
+  }
+
   #introduction .blur_area {
     width: 622px;
     height: 538px;
@@ -392,11 +390,6 @@ main {
 
   .intro .txt_area {
     font-size: 48px;
-  }
-
-  
-  .content_wrap {
-    padding: 16px;
   }
 
 

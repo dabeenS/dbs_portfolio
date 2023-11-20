@@ -4,8 +4,7 @@ $(function(){
   // 인트로 애니메이션
 
   function introAni() {
-    $('.content_wrap').css({display: 'block'});
-    $('.intro').css({background: 'transparent', position: 'fixed' , border: '24px solid var(--point)'});
+    $('.intro').css({background: 'transparent', border: '24px solid var(--point)'});
   }
   
   setTimeout(() => {

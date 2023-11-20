@@ -1,3 +1,7 @@
+.content_wrap {
+  padding: 24px;
+}
+
 .header {
   width: calc(100% - 48px);
   height: 60px;
@@ -184,6 +188,11 @@ footer p:first-child {
 
 
 @media all and (max-width:768px){
+  
+  .content_wrap {
+    padding: 16px;
+  }
+  
 
   .header {
     padding: 0 12px;
