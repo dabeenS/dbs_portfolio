@@ -1,20 +1,37 @@
-.content_wrap {
-  padding: 24px;
+.inner {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.sub .header {
+  width: calc(100% - 48px);
+  padding: 0 24px;
+  top: 24px;
 }
 
 .header {
-  width: calc(100% - 48px);
   height: 60px;
-  padding: 0 24px;
   position: fixed;
 
   z-index: 2;
 }
 
+.header.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.flex .head_title {
+  margin-top: 0;
+}
+
 .header .head_title {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .header h1 {
@@ -31,6 +48,37 @@
 
 .header .head_title dl {
   display: flex;
+}
+
+.header .btn_home {
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--text1);
+  border-radius: 27px;
+  transition: background 0.4s ease;
+}
+
+.header .btn_home:hover {
+  background: var(--text3);
+}
+
+.header .btn_home img {
+  width: 20px;
+  height: auto;
+  margin-right: 6px;
+  position: relative;
+  top: 2px;
+  transform-origin: left center;
+}
+
+.header .btn_home:hover img {
+  animation: home_ani 0.4s ease-out infinite alternate;
+}
+
+@keyframes home_ani {
+  from {transform: translateX(0);}
+  to {transform: translateX(-2px);}
 }
 
 
@@ -70,8 +118,6 @@
 
 
 #contact {
-  width: calc(100% + 96px);
-  margin-left: -48px;
   background: var(--text4);
   padding: 60px 0;
 }
@@ -84,7 +130,7 @@
 
 #contact p {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
 }
 
@@ -156,8 +202,29 @@ footer p:first-child {
 
 @media all and (max-width:1280px){
 
+  .header {
+    height: 50px;
+  }
+
+  .header .head_title {
+    margin-top: 16px;
+  }
+
+  .header .btn_home {
+    font-size: 14px;
+  }
+
+  .header .btn_home span {
+    display: none;
+  }
+
+  .header .btn_home img {
+    width: 14px;
+    top: 0;
+  }
+
+
   #contact {
-    width: calc(100% + 96px);
     padding: 60px 48px;
   }
 
@@ -181,6 +248,11 @@ footer p:first-child {
     font-size: 24px;
   }
 
+  .sub #contact {
+    padding: 60px 0;
+  }
+
+
   footer {
     padding: 24px;
   }
@@ -188,22 +260,36 @@ footer p:first-child {
 
 
 @media all and (max-width:768px){
-  
-  .content_wrap {
-    padding: 16px;
-  }
-  
 
   .header {
-    padding: 0 12px;
+    height: 40px;
   }
 
   .header h1 {
     font-size: 14px;
   }
 
+  .header .head_title {
+    margin-top: 12px;
+}
+
   .header .head_title dl {
     display: none;
+  }
+
+  .header .btn_home {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+
+  .header .btn_home img {
+    width: 12px;
+  }
+
+  .sub .header {
+    width: calc(100% - 32px);
+    padding: 0 12px;
+    top: 16px;
   }
 
 
@@ -225,8 +311,6 @@ footer p:first-child {
 
 
   #contact {
-    width: calc(100% + 48px);
-    margin-left: -24px;
     padding: 24px 24px 40px;
   }
 

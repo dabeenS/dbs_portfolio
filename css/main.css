@@ -26,6 +26,17 @@
 }
 
 
+.content_wrap {
+  padding: 24px;
+}
+
+
+.header {
+  width: calc(100% - 48px);
+  padding: 0 24px;
+}
+
+
 .nav {
   position: fixed;
   left: 48px;
@@ -133,7 +144,7 @@ main {
 #introduction .greeting {
   font-size: 24px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 350;
   margin-bottom: 64px;
 }
 
@@ -153,7 +164,7 @@ main {
 #introduction .list dd, #introduction .list p {
   font-size: 20px;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 #introduction .list .bottom {
@@ -291,6 +302,11 @@ main {
   margin-bottom: 8px;
 }
 
+#contact {
+  margin-left: -48px;
+  width: calc(100% + 96px);
+}
+
 
 @media all and (max-width:1570px) {
 
@@ -383,6 +399,11 @@ main {
     font-size: 28px;
   }
 
+
+  #contact {
+    width: calc(100% + 96px);
+  }
+
 }
 
 
@@ -390,6 +411,17 @@ main {
 
   .intro .txt_area {
     font-size: 48px;
+  }
+
+
+  .content_wrap {
+    padding: 16px;
+  }
+
+
+  .header {
+    width: calc(100% - 32px);
+    padding: 0 12px;
   }
 
 
@@ -524,6 +556,12 @@ main {
 
   #work .work_list .txt_area dd {
     font-size: 14px;
+  }
+
+
+  #contact {
+    width: calc(100% + 48px);
+    margin-left: -24px;
   }
 
 }

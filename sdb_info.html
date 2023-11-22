@@ -14,9 +14,9 @@
     <script src="script/jquery-3.7.1.min.js"></script>
   </head>
 <body></body>
-  <div class="content_wrap">
+  <div class="content_wrap sub">
 
-    <header class="header">
+    <header class="header flex">
       <div class="head_title">
         <h1>석다빈 웹 포트폴리오</h1>
         <dl>
@@ -26,143 +26,160 @@
           <dd>smscms469050@gmail.com</dd>
         </dl>
       </div>
-      <div class="btn">
-        <a href="javascript:history.back();"><img src="img/ico-arrow02.svg" alt="">홈으로 <span>돌아가기</span></a>
-      </div>
+      <a class="btn_home" href="javascript:history.back();"><img src="img/ico-arrow02.svg" alt="">홈으로 <span>돌아가기</span></a>
     </header>
 
     <div class="main_wrap">
       <div class="top"></div>
-      <div class="left"></div>
-      <div class="right"></div>
       <div class="bottom"></div>
     </div>
 
-    <main>
-      <section class="intro"> 
-        <p>디자인에 fall in love! <span aria-hidden="true">🥰</span><br>고등학교 시절부터 디자이너가 되기 위해 차근차근 준비해 왔습니다.<br>사용하기 편하고 일관성 있는 디자인을 작업하며,<br>더욱 많은 사람이 제 작업물로 편안한 미소를 지을 수 있도록 노력합니다.</p>
-      </section>
-      <section class="info_list">
-        <div class="list experience">
-          <h2><span class="small">Experience :</span> 이렇게 경력을 쌓았어요.</h2>
-          <ul>
-            <li>
-              <div class="tit">
-                <h3>[외주] 삼성출판사 웹 퍼블리싱</h3>
-                <span class="date">2023.10</span>
+    <main id="info">
+      <div class="inner">
+        <section class="intro"> 
+          <p>디자인에 fall in love! <span aria-hidden="true">🥰</span><br>고등학교 시절부터 디자이너가 되기 위해 차근차근 준비해 왔습니다.<br>사용하기 편하고 일관성 있는 디자인을 작업하며,<br>더욱 많은 사람이 제 작업물로 편안한 미소를 지을 수 있도록 노력합니다.</p>
+        </section>
+        <section class="info_list">
+          <div class="list experience">
+            <h2><span class="small">Experience :</span> 이렇게 경력을 쌓았어요.</h2>
+            <ul>
+              <li>
+                <div class="tit">
+                  <h3>[외주] 삼성출판사 웹 퍼블리싱</h3>
+                  <span class="date">2023.10</span>
+                </div>
+                <p>이러닝센터 웹 퍼블리싱 수정 작업으로, 기존 퍼블리싱 완료된 이러닝센터 페이지가 디자인 수정&기능 추가됨에 따라, 그에 맞춰 웹 퍼블리싱 수정 작업을 진행했습니다. 총 20페이지를 수정하였습니다.</p>
+              </li>
+              <li>
+                <div class="tit">
+                  <h3>(주) 나인커뮤니케이션<span> | UX/UI 부서 주임</span></h3>
+                  <span class="date">2023.10</span>
+                </div>
+                <p>스타트업 5번째 초기 멤버로 입사해 웹 페이지, 마스코트 캐릭터, 콘텐츠, 페어/박람회 실사 출력물 디자인 작업을 하였습니다. 대표 브랜드는 전체 페이지 중 약 30%를 담당하여 리뉴얼 작업을 하였고, 몇몇 페이지는 화면 정의서나 웹 퍼블리싱(HTML/CSS) 작업을 진행하기도 하였습니다.</p>
+              </li>
+              <li>
+                <div class="tit">
+                  <h3>[외주] 해밀방향제 상세페이지</h3>
+                  <span class="date">2022.04</span>
+                </div>
+                <p>리뉴얼 컨셉, 사진, 기존 상세페이지를 토대로 새롭게 상세페이지를 디자인하는 작업을 진행하였습니다. </p>
+              </li>
+            </ul>
+          </div>
+          <div class="list activity">
+            <h2>디자이너가 되기 위해 이런 활동들을 했어요.</h2>
+            <li class="flex">
+              <div class="tag">Education.</div>
+              <div>
+                <ul>
+                  <li>
+                    <div class="tit">
+                      <h3>웹디자인(웹퍼블리셔) 프론트앤드 실무자 양성 과정 수료</h3>
+                      <span class="date">2020.06~2020.11</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tit">
+                      <h3>인하공업전문대학<span> | 산업디자인과 (4.1/4.5)</span></h3>
+                      <span class="date">2018.02~2019.12</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <p>이러닝센터 웹 퍼블리싱 수정 작업으로, 기존 퍼블리싱 완료된 이러닝센터 페이지가 디자인 수정&기능 추가됨에 따라, 그에 맞춰 웹 퍼블리싱 수정 작업을 진행했습니다. 총 20페이지를 수정하였습니다.</p>
             </li>
-            <li>
-              <div class="tit">
-                <h3>(주) 나인커뮤니케이션<span> | UX/UI 부서 주임</span></h3>
-                <span class="date">2023.10</span>
+            <li class="flex">
+              <div class="tag">Activity.</div>
+              <div>
+                <ul>
+                  <li>
+                    <div class="tit">
+                      <h3>제48회 전국 대학(원)생 디자인 대전 시각디자인 부문 입선</h3>
+                      <span class="date">2019.11</span>
+                    </div>
+                    <p>UX/UI 작업물인 1인용 일기 애플리케이션입니다. 스티커 수집 요소를 더해 꾸준히 일기를 작성할 수 있도록 기획하였습니다. 1인 작업물로 기획/디자인 부분 기여도 100%입니다.</p>
+                  </li>
+                  <li>
+                    <div class="tit">
+                      <h3>인하공업전문대학 산업디자인과 제45회 교육성과 발표회</h3>
+                      <span class="date">2019.11</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <p>스타트업 5번째 초기 멤버로 입사해 웹 페이지, 마스코트 캐릭터, 콘텐츠, 페어/박람회 실사 출력물 디자인 작업을 하였습니다. 대표 브랜드는 전체 페이지 중 약 30%를 담당하여 리뉴얼 작업을 하였고, 몇몇 페이지는 화면 정의서나 웹 퍼블리싱(HTML/CSS) 작업을 진행하기도 하였습니다.</p>
             </li>
-            <li>
-              <div class="tit">
-                <h3>[외주] 해밀방향제 상세페이지</h3>
-                <span class="date">2022.04</span>
+            <li class="flex">
+              <div class="tag">Certificate.</div>
+              <div>
+                <ul>
+                  <li>
+                    <div class="tit">
+                      <h3>웹디자인기능사</h3>
+                      <span class="date">2021.12</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tit">
+                      <h3>GTQ 1급</h3>
+                      <span class="date">2018.08</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <p>리뉴얼 컨셉, 사진, 기존 상세페이지를 토대로 새롭게 상세페이지를 디자인하는 작업을 진행하였습니다. </p>
             </li>
-          </ul>
-        </div>
-        <div class="list activity">
-          <h2>디자이너가 되기 위해 이런 활동들을 했어요.</h2>
-          <li>
-            <div class="tag">Education.</div>
-            <div>
-              <ul>
-                <li>
-                  <div class="tit">
-                    <h3>웹디자인(웹퍼블리셔) 프론트앤드 실무자 양성 과정 수료</h3>
-                    <span class="date">2020.06~2020.11</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="tit">
-                    <h3>인하공업전문대학<span> | 산업디자인과 (4.1/4.5)</span></h3>
-                    <span class="date">2018.02~2019.12</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="tag"></div>
-            <div>
-              <ul>
-                <li>
-                  <div class="tit">
-                    <h3>제48회 전국 대학(원)생 디자인 대전 시각디자인 부문 입선</h3>
-                    <span>2019.11</span>
-                  </div>
-                  <p>UX/UI 작업물인 1인용 일기 애플리케이션입니다. 스티커 수집 요소를 더해 꾸준히 일기를 작성할 수 있도록 기획하였습니다. 1인 작업물로 기획/디자인 부분 기여도 100%입니다.</p>
-                </li>
-                <li>
-                  <div class="tit">
-                    <h3>인하공업전문대학 산업디자인과 제45회 교육성과 발표회</h3>
-                    <span>2019.11</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </div>
-        <div class="list well">
-          <h2>이런 걸 잘할 수 있어요.</h2>
-          <li>
-            <div class="tag">Skill set.</div>
-            <div>
-              <ul>
-                <li>
-                  <h3>UX/UI 디자인</h3>
-                  <p>(주)나인커뮤니케이션에서 사용자를 생각하는 페이지 디자인을 작업하였습니다. 또, 대학 시절 25개 애플리케이션을 직접 케이스 스터디하여 작업한 UX/UI 디자인을 통해 대회에서 입선한 경험이 있습니다.</p>
-                </li>
-                <li>
-                  <h3>웹 퍼블리싱</h3>
-                  <p>웹 퍼블리싱</p>
-                </li>
-                <li>
-                  <h3>콘텐츠 디자인</h3>
-                  <p>배너, 카드뉴스, 포스터 등 다양한 종류와 컨셉의 콘텐츠 디자인이 가능합니다.</p>
-                </li>
-                <li>
-                  <h3>캐릭터 디자인</h3>
-                  <p>귀여운 캐릭터를 디자인합니다. 개성 있는 인물 캐릭터 디자인에도 관심이 많습니다.</p>
-                </li>
-                <li>
-                  <h3>픽셀 아트</h3>
-                  <p>귀여운 캐릭터, 사물 등 다양한 픽셀 아트를 작업합니다. 움직이는 픽셀 애니메이션도 작업할 수 있습니다.</p>
-                </li>
-                <li>
-                  <h3>문서 작성</h3>
-                  <p>깔끔한 PPT 문서, 간단한 엑셀/워드 문서 등을 작성합니다.</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="tool">
-            <div class="tag">Tool skill.</div>
-            <div>
-              <ul class="left">
-                <li class="bold">Adobe Photochop</li>
-                <li class="bold">Adobe Illustrator</li>
-                <li>Adobe Xd</li>
-                <li>Figma</li>
-              </ul>
-              <ul class="right">
-                <li>Zeplin</li>
-                <li>VS Code</li>
-                <li>Notion</li>
-                <li>PowerPoint</li>
-              </ul>
-            </div>
-          </li>
-        </div>
-      </section>
+          </div>
+          <div class="list well">
+            <h2>이런 걸 잘할 수 있어요.</h2>
+            <li class="flex">
+              <div class="tag">Skill set.</div>
+              <div>
+                <ul>
+                  <li>
+                    <h3>UX/UI 디자인</h3>
+                    <p>(주)나인커뮤니케이션에서 사용자를 생각하는 페이지 디자인을 작업하였습니다. 또, 대학 시절 25개 애플리케이션을 직접 케이스 스터디하여 작업한 UX/UI 디자인을 통해 대회에서 입선한 경험이 있습니다.</p>
+                  </li>
+                  <li>
+                    <h3>웹 퍼블리싱</h3>
+                    <p>숙련된 HTML/CSS, 기본적인 JavaScript/jQuery 스킬을 통해 탄탄한 웹 페이지를 마크업 할 수 있습니다.</p>
+                  </li>
+                  <li>
+                    <h3>콘텐츠 디자인</h3>
+                    <p>배너, 카드뉴스, 포스터 등 다양한 종류와 컨셉의 콘텐츠 디자인이 가능합니다.</p>
+                  </li>
+                  <li>
+                    <h3>캐릭터 디자인</h3>
+                    <p>귀여운 캐릭터를 디자인합니다. 개성 있는 인물 캐릭터 디자인에도 관심이 많습니다.</p>
+                  </li>
+                  <li>
+                    <h3>픽셀 아트</h3>
+                    <p>귀여운 캐릭터, 사물 등 다양한 픽셀 아트를 작업합니다. 움직이는 픽셀 애니메이션도 작업할 수 있습니다.</p>
+                  </li>
+                  <li>
+                    <h3>문서 작성</h3>
+                    <p>깔끔한 PPT 문서, 간단한 엑셀/워드 문서 등을 작성합니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="tool flex">
+              <div class="tag">Tool skill.</div>
+              <div class="flex">
+                <ul class="left">
+                  <li class="bold">Adobe Photochop</li>
+                  <li class="bold">Adobe Illustrator</li>
+                  <li>Adobe Xd</li>
+                  <li>Figma</li>
+                </ul>
+                <ul class="right">
+                  <li>Zeplin</li>
+                  <li>VS Code</li>
+                  <li>Notion</li>
+                  <li>PowerPoint</li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </section>
+      </div>
       <section id="contact">
         <div class="inner">
           <h4>Thanks for watching! <span aria-hidden="true">😘</span></h4>
