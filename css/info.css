@@ -1,0 +1,200 @@
+@charset "uft-8";
+
+.content_wrap {
+  border: 24px solid var(--point);
+}
+
+
+.intro {
+  margin-top: 100px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 350;
+}
+
+.info_list {
+  margin: 40px 0 120px;
+}
+
+.info_list .list {
+  margin-bottom: 40px;
+}
+
+.info_list h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--point);
+  margin-bottom: 16px;
+}
+
+.info_list h2 .small {
+  font-size: 20px;
+  color: var(--point);
+}
+
+.info_list h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.info_list h3 span {
+  font-weight: 350;
+}
+
+.info_list .date {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.info_list p {
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.info_list .tag {
+  width: 160px;
+  font-size: 18px;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+
+.info_list .tit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_list .list li {
+  margin-bottom: 16px;
+}
+
+.info_list .list .flex {
+  display: flex;
+}
+
+.info_list .list .flex div:nth-of-type(2) {
+  width: 100%;
+}
+
+.info_list .list .tool li {
+  font-size: 20px;
+  font-weight: 500;
+  width: 300px;
+}
+
+.info_list .list .tool li.bold {
+  font-weight: 800;
+}
+
+@media all and (max-width:1280px){
+  
+  #info .inner {
+    padding: 0 24px;
+  }
+
+
+  .intro {
+    font-size: 20px;
+  }
+
+  .info_list h2 {
+    font-size: 20px;
+  }
+  
+  .info_list h2 .small {
+    font-size: 16px;
+  }
+  
+  .info_list h3 {
+    font-size: 16px;
+  }
+
+  .info_list .date {
+    font-size: 14px;
+  }
+  
+  .info_list p {
+    font-size: 14px;
+  }
+  
+  .info_list .tag {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .info_list .list .tool li {
+    width: 200px;
+    font-size: 16px;
+  }
+  
+
+}
+
+@media all and (max-width:768px){
+
+  .content_wrap {
+    border: 16px solid var(--point);
+  }
+  
+
+  #info .inner {
+    padding: 0 12px;
+  }
+
+
+  .intro {
+    margin-top: 80px;
+    font-size: 16px;
+  }
+
+  .info_list {
+    margin: 40px 0 80px;
+  }
+
+  .info_list h2 {
+    font-size: 16px;
+  }
+  
+  .info_list h2 .small {
+    font-size: 14px;
+  }
+  
+  .info_list h3 {
+    font-size: 14px;
+  }
+
+  .info_list .date {
+    font-size: 13px;
+  }
+  
+  .info_list p {
+    font-size: 13px;
+  }
+  
+  .info_list .tag {
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .info_list .list .tool .flex {
+    gap: 8px;
+  }
+
+  .info_list .list .tool ul {
+    min-width: 100px;
+    width: 50%;
+  }
+
+  .info_list .list .tool li {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sub #contact {
+    padding: 24px 0 40px;
+}
+
+}
