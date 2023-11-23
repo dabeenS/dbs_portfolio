@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.content_wrap.sub {
+  border: 24px solid var(--point);
+}
+
 
 .sub .header {
   width: calc(100% - 48px);
@@ -262,6 +266,12 @@ footer p:first-child {
 
 
 @media all and (max-width:768px){
+  
+
+  .content_wrap.sub {
+    border: 16px solid var(--point);
+  }
+  
 
   .header {
     height: 40px;
