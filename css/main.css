@@ -101,37 +101,6 @@
 }
 
 
-#scroll {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 48px;
-  text-align: center;
-}
-
-#scroll svg {
-  width: 12px;
-  animation: scroll_ani 1s ease-in-out infinite alternate;
-}
-
-@keyframes scroll_ani {
-  from {
-    transform: translateY(0) scaleY(1);
-  }
-  to {
-    transform: translateY(-14px) scaleY(1.4);
-  }
-}
-
-#scroll p {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text2);
-  line-height: 1.5;
-}
-
-
 main {
   width: 100%;
   padding: 24px 24px 0;

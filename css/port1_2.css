@@ -1,0 +1,83 @@
+@charset "uft-8";
+
+.sub1_port2 .cover {
+  background-image: url(../img/img-port1-2-cover.png);
+}
+
+.sub1_port2 .info h3 {
+  color: #2152FF;
+}
+
+.sub1_port2 .concept {
+  margin-bottom: 240px;
+}
+
+.sub1_port2 .main._1 {
+  background: linear-gradient(90deg, #21C0E9 0%, #2152FF 100%);
+}
+
+.sub1_port2 .main._2 {
+  background: linear-gradient(90deg, #3A416F 0%, #141727 100%);
+}
+
+.sub1_port2 .sub._1 {
+  background-color: #252F40;
+}
+
+.sub1_port2 .sub._2 {
+  background-color: #BAC0C6;
+}
+
+.sub1_port2 .img1 {
+  width: 70%;
+  max-width: 810px;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  z-index: -1;
+}
+
+.sub1_port2 .concept .list {
+  margin-top: 24px;
+}
+
+
+@media all and (max-width:1280px){
+  
+  .sub1_port2 .concept {
+    margin-bottom: 17vw;
+  }
+
+  .sub1_port2 .img1 {
+    width: 60%;
+  }
+  
+  .sub1_port2 .concept .list > li:nth-child(3) p {
+    width: 40%;
+  }
+
+}
+
+
+@media all and (max-width:768px){
+  
+    .sub1_port2 .concept {
+      margin-bottom: 40px;
+    }
+
+  .sub1_port2 .img1 {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    top: -12px;
+  }
+
+  .sub1_port2 .concept .list {
+    margin-top: 0;
+  }
+
+  .sub1_port2 .concept .list > li:nth-child(3) p {
+    width: 100%;
+  }
+
+}

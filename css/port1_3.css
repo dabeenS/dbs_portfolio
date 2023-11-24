@@ -1,0 +1,122 @@
+@charset "uft-8";
+
+.sub1_port3 .cover {
+  background-image: url(../img/img-port1-3-cover.png);
+}
+
+.sub1_port3 .info h3 {
+  color: #2E0082;
+}
+
+.sub1_port3 .main._1 {
+  background-color: #2e0082;
+}
+
+.sub1_port3 .main._2 {
+  background-color: #6827ff;
+}
+
+.sub1_port3 .sub._1 {
+  background-color: #292929;
+}
+
+.sub1_port3 .point._1 {
+  background-color: #ffa638;
+}
+
+.sub1_port3 .img1 {
+  width: 50%;
+  max-width: 600px;
+  position: absolute;
+  top: 66px;
+  right: 0;
+  z-index: -1;
+}
+
+.sub1_port3 .img1 .mb {
+  display: none;
+}
+
+.sub1_port3 .concept {
+  margin-bottom: 120px;
+}
+
+.sub1_port3 .concept .list {
+  margin-top: 24px;
+}
+
+.sub1_port3 .concept .list > li:nth-child(1) p {
+  max-width: 700px;
+  width: 50%;
+}
+
+.sub1_port3 .img_list {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  gap: 24px;
+}
+
+.sub1_port3 .img_list li {
+  width: calc(50% - 12px);
+  margin-bottom: -4px;
+}
+
+.sub1_port3 .img_list img {
+  width: 100%;
+}
+
+@media all and (max-width:1280px){
+  
+  .sub1_port3 .concept {
+    margin-bottom: 60px;
+  }
+
+  .sub1_port3 .concept .list > li:nth-child(1) p,
+  .sub1_port3 .comp_img {
+    width: 49%;
+  }
+
+}
+
+
+@media all and (max-width:768px){ 
+
+
+  .sub1_port3 .img1 {
+    position: relative;
+    width: 100%;
+    max-width: 712px;
+    top: -12px;
+  }
+
+  .sub1_port3 .img1 .pc {
+    display: none;
+  }
+
+  .sub1_port3 .img1 .mb {
+    display: block;
+  }
+
+  .sub1_port3 .concept .list {
+    margin-top: 10px;
+  }
+
+  .sub1_port3 .concept .list > li:nth-child(1) p {
+    width: 100%;
+  }
+  
+  .sub1_port3 .comp_img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .sub1_port3 .img_list {
+    gap: 8px;
+  }
+  
+  .sub1_port3 .img_list li {
+    width: calc(50% - 4px);
+  }
+  
+}

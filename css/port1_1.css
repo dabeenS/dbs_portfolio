@@ -1,7 +1,7 @@
 @charset "uft-8";
 
 .sub1_port1 .cover {
-  background-image: url(../img/img-port1-1-cover-pc.png);
+  background-image: url(../img/img-port1-1-cover.png);
 }
 
 .sub1_port1 .info h3 {
@@ -32,16 +32,6 @@
   margin-bottom: 60px;
 }
 
-.sub1_port1 .concept .list > li:nth-child(1) p {
-  max-width: 700px;
-  width: 60%;
-}
-
-.sub1_port1 .concept .list > li:nth-child(2) p {
-  max-width: 600px;
-  width: 50%;
-}
-
 .sub1_port1 .img1 {
   width: 80%;
   max-width: 900px;
@@ -49,6 +39,16 @@
   top: 66px;
   right: 0;
   z-index: -1;
+}
+
+.sub1_port1 .concept .list > li:nth-child(1) p {
+  max-width: 700px;
+  width: 64%;
+}
+
+.sub1_port1 .concept .list > li:nth-child(2) p {
+  max-width: 600px;
+  width: 50%;
 }
 
 .sub1_port1 .img2 {
@@ -94,9 +94,6 @@
 
 @media all and (max-width:768px){ 
 
-  #port .inner {
-    padding: 0 12px;
-  }
 
   .sub1_port1 .img1 {
     position: relative;
@@ -113,6 +110,7 @@
   .sub1_port1 .concept .list > li:nth-child(2) p {
     width: 100%;
   }
+
   .sub1_port1 .img2 {
     width: 100%;
     max-width: 304px;

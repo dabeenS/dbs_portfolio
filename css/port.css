@@ -2,6 +2,7 @@
 
 .port .header {
   height: auto;
+  background-color: rgba(255,255,255,.45);
 }
 
 .port .header .flex {
@@ -10,7 +11,7 @@
 
 .port_tit {
   width: 100%;
-  padding: 10px 0;
+  padding-bottom: 20px;
 }
 
 .port_tit h1 {
@@ -82,6 +83,36 @@
   margin-top: 8px;
 }
 
+.info .overview .link_btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--text1);
+  border-radius: 27px;
+  transition: background 0.4s ease;
+}
+
+.info .overview .link_btn img {
+  width: 14px;
+  transform: rotate(180deg);
+  margin-left: 8px;
+}
+
+.info .overview .link_btn:hover img {
+  animation: link_ani 0.4s ease-out infinite alternate;
+}
+
+@keyframes link_ani {
+  from {transform: rotate(180deg) translateX(0);}
+  to {transform: rotate(180deg) translateX(-2px);}
+}
+
+.info .overview .link_btn:hover {
+  background: var(--text3);
+}
+
 .info .overview .list > li {
   margin-bottom: 20px;
 }
@@ -92,6 +123,10 @@
 
 .info .concept {
   position: relative;
+}
+
+.info .concept span {
+  font-weight: 500;
 }
 
 .info .concept .list > li {
@@ -121,6 +156,10 @@
   width: 40px;
 }
 
+.info .concept .color .point {
+  width: 20px;
+}
+
 .info .concept .font_img {
   margin-top: 12px;
 }
@@ -134,6 +173,10 @@
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.other h2.mb {
+  display: none;
 }
 
 .other .flex {
@@ -197,21 +240,22 @@
 
 
 @media all and (max-width:1280px){
-
-  .port .header {
-    background-color: rgba(255,255,255,.45);
-  }
   
   .port .header .flex {
     height: 50px;
   }
 
   .port_tit {
-    padding: 0 0 14px;
+    padding-bottom: 14px;
   }
 
   .port_tit h1 {
     font-size: 28px;
+  }
+
+
+  #scroll {
+    display: none;
   }
 
 
@@ -244,6 +288,11 @@
     font-size: 20px;
   }
 
+  .info .overview .link_btn {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
   .info .overview .flex {
     flex-flow: row wrap;
     gap: 28px;
@@ -259,7 +308,9 @@
   }
 
 
-
+  .other {
+    margin-bottom: 80px;
+  }
 
   .other h2 {
     font-size: 20px;
@@ -281,6 +332,10 @@
 
 
 @media all and (max-width:768px){
+
+  #port .inner {
+    padding: 0 12px;
+  }
 
   .port .header .flex {
     height: 40px;
@@ -311,6 +366,10 @@
     font-size: 16px;
   }
 
+  .info .overview .link_btn {
+    display: none;
+  }
+
   .info .concept .color {
     width: fit-content;
     gap: 0;
@@ -322,6 +381,10 @@
     border-radius: 0;
   }
 
+
+  .other {
+    margin-bottom: 40px;
+  }
 
   .other h2 {
     font-size: 16px;
@@ -349,6 +412,20 @@
 
   .other .list._2 a {
     padding-right: 0;
+  }
+
+}
+
+
+@media all and (max-width:360px) {
+
+  .other h2.pc {
+    display: none;
+  }
+
+  .other h2.mb {
+    display: block;
+    line-height: 1.5;
   }
 
 }
