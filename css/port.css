@@ -1,9 +1,16 @@
 @charset "uft-8";
 
+.port .header {
+  height: auto;
+}
+
+.port .header .flex {
+  height: 60px;
+}
+
 .port_tit {
-  position: fixed;
-  top: 74px;
-  padding: 10px 24px;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .port_tit h1 {
@@ -191,10 +198,26 @@
 
 @media all and (max-width:1280px){
 
+  .port .header {
+    background-color: rgba(255,255,255,.45);
+  }
+  
+  .port .header .flex {
+    height: 50px;
+  }
+
+  .port_tit {
+    padding: 0 0 14px;
+  }
+
   .port_tit h1 {
     font-size: 28px;
   }
 
+
+  .info {
+    margin: 40px 0 60px;
+  }
   
   #port .inner {
     padding: 0 24px;
@@ -203,15 +226,6 @@
   .cover {
     height: 560px;
     background-size: cover;
-  }
-
-  .info .overview .flex {
-    flex-flow: row wrap;
-    gap: 28px;
-  }
-
-  .info .overview .txt_area p {
-    max-width: none;
   }
 
   .info h2 {
@@ -230,6 +244,22 @@
     font-size: 20px;
   }
 
+  .info .overview .flex {
+    flex-flow: row wrap;
+    gap: 28px;
+    margin-top: 16px;
+  }
+
+  .info .overview .txt_area p {
+    max-width: none;
+  }
+
+  .info .overview .list > li {
+    margin-bottom: 12px;
+  }
+
+
+
 
   .other h2 {
     font-size: 20px;
@@ -241,6 +271,84 @@
 
   .other .list a {
     font-size: 16px;
+  }
+
+  .other .list._2 a {
+    padding-right: 14px;
+  }
+
+}
+
+
+@media all and (max-width:768px){
+
+  .port .header .flex {
+    height: 40px;
+  }
+
+  .port_tit h1 {
+    font-size: 16px;
+  }
+
+
+  .cover {
+    height: 360px;
+  }
+
+  .info h2 {
+    font-size: 24px;
+  } 
+  
+  .info h3 {
+    font-size: 14px;
+  }
+  
+  .info p {
+    font-size: 13px;
+  }
+  
+  .info .first_txt {
+    font-size: 16px;
+  }
+
+  .info .concept .color {
+    width: fit-content;
+    gap: 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .info .concept .color li {
+    border-radius: 0;
+  }
+
+
+  .other h2 {
+    font-size: 16px;
+  }
+
+  .other .list h3 {
+    font-size: 14px;
+  }
+
+  .other .list a {
+    font-size: 14px;
+  }
+
+  .other .flex {
+    flex-flow: column wrap;
+  }
+
+  .other .list {
+    width: 100%;
+  }
+
+  .other .list._2 {
+    text-align: left;
+  }
+
+  .other .list._2 a {
+    padding-right: 0;
   }
 
 }

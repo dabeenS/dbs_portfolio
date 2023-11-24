@@ -69,7 +69,6 @@
 
 @media all and (max-width:1280px){
 
-
   .sub1_port1 .concept {
     margin-bottom: 80px;
   }
@@ -80,6 +79,7 @@
 
   .sub1_port1 .img1 {
     width: 70%;
+    min-width: 560px;
     top: 60px;
   }
 
@@ -87,6 +87,47 @@
     width: 80%;
     max-width: 750px;
     height: fit-content;
+  }
+
+}
+
+
+@media all and (max-width:768px){ 
+
+  #port .inner {
+    padding: 0 12px;
+  }
+
+  .sub1_port1 .img1 {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    top: -36px;
+  }
+
+  .sub1_port1 .concept .list {
+    margin-top: -16px;
+  }
+
+  .sub1_port1 .concept .list > li:nth-child(1) p,
+  .sub1_port1 .concept .list > li:nth-child(2) p {
+    width: 100%;
+  }
+  .sub1_port1 .img2 {
+    width: 100%;
+    max-width: 304px;
+  }
+
+  .sub1_port1 .img2 .pc {
+    display: none;
+  }
+
+  .sub1_port1 .img2 .mb {
+    display: block;
+  }
+
+  .sub1_port1 .img3 {
+    margin-top: 20px;
   }
 
 }
