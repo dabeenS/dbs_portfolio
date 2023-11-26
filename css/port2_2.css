@@ -1,0 +1,113 @@
+@charset "uft-8";
+
+.sub2_port2 .cover {
+  background-image: url(../img/img-port2-2-cover.png);
+}
+
+.sub2_port2 .info h3 {
+  color: #8061DE;
+}
+
+.sub2_port2 .main._1 {
+  background-color: #8061de;
+}
+
+.sub2_port2 .main._2 {
+  background-color: #ffbbdd;
+}
+
+.sub2_port2 .sub._1 {
+  background-color: #ff9a9a;
+}
+
+
+.sub2_port2 .img1 {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.sub2_port2 .img1 .mb {
+  display: none;
+}
+
+.sub2_port2 .concept .list {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+} 
+
+.sub2_port2 .concept .list > li:nth-child(1) {
+  width: calc(50% - 25px);
+}
+
+
+.sub2_port2 .img_list {
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.sub2_port2 .left {
+  width: calc(50% - 8px);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+
+}
+
+.sub2_port2 .img4 {
+  width:50%;
+}
+
+@media all and (max-width:1280px){
+
+  .sub2_port2 .concept .list > li:nth-child(1) {
+    width: 70%;
+    max-width: 600px;
+  }
+
+  
+}
+
+@media all and (max-width:768px){
+
+  .sub2_port2 .img1 .pc {
+    display: none;
+  }
+
+  .sub2_port2 .img1 .mb {
+    display: block;
+  }
+
+  .sub2_port2 .concept .list {
+    flex-flow: column wrap;
+    gap: 0;
+    margin-bottom: 40px;
+  }
+
+  .sub2_port2 .concept .list > li:nth-child(1) {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .sub2_port2 .img_list {
+    flex-flow: row wrap;
+    gap: 12px;
+  }
+
+  .sub2_port2 .left {
+    gap: 12px;
+  }
+  
+  .sub2_port2 .left {
+    width: 100%;
+  }
+  
+  .sub2_port2 .left figure {
+    width: 100%
+  }
+
+  .sub2_port2 .img4 {
+    width: 100%;
+  }
+}

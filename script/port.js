@@ -6,11 +6,13 @@ $(function(){
 
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 20) {
-      $('#scroll').fadeOut();
-    } else {
-      $('#scroll').fadeIn();
-    }
+    if ($(window).width() > 1280) {
+      if (scroll >= 20) {
+        $('#scroll').fadeOut();
+      } else {
+        $('#scroll').fadeIn();
+      };
+    };
 
   });
 

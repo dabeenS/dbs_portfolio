@@ -1,0 +1,36 @@
+@charset "uft-8";
+
+.sub2_port3 .cover {
+  background-image: url(../img/img-port2-3-cover.png);
+}
+
+.sub2_port3 .info h3 {
+  color: #2E0082;
+}
+
+.sub2_port3 .img_list figure {
+  width: 60%;
+  max-width: 712px;
+  margin-bottom: 40px;
+}
+
+.sub2_port3 .img1 {
+  margin-left: auto;
+}
+
+.sub2_port3 .img2 {
+  margin-right: auto;
+}
+
+.sub2_port3 .img3 {
+  margin-left: auto;
+}
+
+
+@media all and (max-width:768px){
+
+  .sub2_port3 .img_list figure {
+    width: 100%;
+  }
+
+}

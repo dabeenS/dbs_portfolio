@@ -120,3 +120,10 @@
   }
   
 }
+
+
+@media all and (max-width:360px){ 
+  .sub1_port3 .img_list li {
+    width: 100%;
+  }
+}

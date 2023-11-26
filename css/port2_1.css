@@ -1,0 +1,68 @@
+@charset "uft-8";
+
+.sub2_port1 .cover {
+  background-image: url(../img/img-port2-1-cover.png);
+}
+
+.sub2_port1 .info h3 {
+  color: #7466FF;
+}
+
+.sub2_port1 .overview .flex {
+  margin-bottom: 40px;
+}
+
+.sub2_port1 .img1 {
+  width: 100%;
+}
+
+.sub2_port1 .img1 .mb {
+  display: none;
+}
+
+.sub2_port1 .img_list {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sub2_port1 .img_list figure {
+  width: 60%;
+  max-width: 712px;
+  margin-bottom: 40px;
+}
+
+.sub2_port1 .img2 {
+  margin-left: auto;
+}
+
+.sub2_port1 .img3 {
+  margin-right: auto;
+}
+
+.sub2_port1 .img4 {
+  margin-left: auto;
+}
+
+
+@media all and (max-width:768px){
+
+  .sub2_port1 .img1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .sub2_port1 .img1 .pc {
+    display: none;
+  }
+
+  .sub2_port1 .img1 .mb {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .sub2_port1 .img_list figure {
+    width: 100%;
+  }
+
+}
