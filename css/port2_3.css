@@ -15,15 +15,15 @@
 }
 
 .sub2_port3 .img1 {
-  margin-left: auto;
-}
-
-.sub2_port3 .img2 {
   margin-right: auto;
 }
 
-.sub2_port3 .img3 {
+.sub2_port3 .img2 {
   margin-left: auto;
+}
+
+.sub2_port3 .img3 {
+  margin-right: auto;
 }
 
 
